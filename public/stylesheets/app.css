@@ -1,0 +1,47 @@
+header {
+    background-color: #244751;
+    color: #E8FDFF;
+    padding: 0px, 0px, 0px, 0px;
+    margin-bottom: 28px;
+}
+
+h1{
+    color:#E8FDFF;
+    margin-left: 25px;
+}
+
+h1:hover{
+    color:#B2CFD9;
+    cursor: pointer;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Manrope', sans-serif;
+
+}
+main {
+    background-color: white;
+    padding: 16px;
+} 
+
+a.photo{
+    transition: padding 0.3s;
+}
+
+a.photo:hover{
+    padding:5px;
+    cursor: pointer;
+}
+
+.finstagram-post {
+    margin-bottom: 48px;
+}
+.finstagram-post .user-info img {
+    border-radius: 50%;
+}
+
+.formbox {
+    margin: 30px 15px; 
+    display: inline-block; 
+}

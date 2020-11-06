@@ -1,0 +1,25 @@
+<% if current_user %>
+    <div class="new-finstagram-post">
+        <a href= "/finstagram_posts/new" class="button"> New Post </a>
+    </div>
+<% end %>
+
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../../stylesheets/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family+Roboto+Condensed:30italic,700,300">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../../stylesheets/lib.css">
+        <link rel="stylesheet" href="../../../stylesheets/app.css">
+        <title>Finstagram</title>
+    </head>
+
+   
+ <%@finstagram_posts.each do |finstagram_post| %>
+    <%= erb(:'shared/finstagram_post', { locals: { finstagram_post: finstagram_post, allow_new_comment: false }}) %>
+<% end %>
+        
+  
+</html>
+
